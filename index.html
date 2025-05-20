@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастинги</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем Telegram WebApp скрипт для интеграции с Telegram -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок приложения -->
+        <h1 id="header">Список ближайших кастингов</h1>
+        
+        <!-- Кнопка "Старт" для начала работы с приложением -->
+        <div class="start-container">
+            <button id="startButton" class="start-button">Старт</button>
+        </div>
+        
+        <!-- Контейнер для карточек кастингов (изначально скрыт) -->
+        <div id="castingsList" class="castings-list" style="display: none;">
+            <!-- Карточки будут добавлены сюда с помощью JavaScript -->
+        </div>
+        
+        <!-- Индикатор загрузки (изначально скрыт) -->
+        <div id="loader" class="loader" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Подключаем JavaScript логику -->
+    <script src="script.js"></script>
+</body>
+</html>
