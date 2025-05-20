@@ -12,16 +12,21 @@
 <body>
     <div class="container">
         <!-- Заголовок приложения -->
-        <h1 id="header">Список ближайших кастингов</h1>
+        <h1 id="header">Выберите ваш город</h1>
         
-        <!-- Кнопка "Старт" для начала работы с приложением -->
-        <div class="start-container">
-            <button id="startButton" class="start-button">Старт</button>
+        <!-- Контейнер для выбора города (изначально показан) -->
+        <div id="citySelector" class="city-selector">
+            <!-- Города будут добавлены сюда с помощью JavaScript -->
         </div>
         
         <!-- Контейнер для карточек кастингов (изначально скрыт) -->
         <div id="castingsList" class="castings-list" style="display: none;">
             <!-- Карточки будут добавлены сюда с помощью JavaScript -->
+        </div>
+        
+        <!-- Кнопка "Назад" для возврата к выбору города (изначально скрыта) -->
+        <div id="backButtonContainer" class="back-button-container" style="display: none;">
+            <button id="backButton" class="back-button">Назад к выбору города</button>
         </div>
         
         <!-- Индикатор загрузки (изначально скрыт) -->
